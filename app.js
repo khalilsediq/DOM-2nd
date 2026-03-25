@@ -58,3 +58,27 @@ q7Btn.addEventListener("click", ()=> {
     }
 })
 /////////////////////////////////////
+
+
+const q15Btn = document.querySelector("#q15-btn")
+const para = document.querySelector("#para")
+const agree = document.querySelector("#agree")
+agree.addEventListener('click', ()=>{
+    if (agree.checked) {
+        para.innerHTML =  "Agreed"
+        
+    }else{
+        para.innerHTML = "Not Agreed"
+    }
+})
+/////////////////////////////////
+
+
+const options = document.querySelector("#options")
+const selectedValue = document.querySelector("#selectedValue")
+options.addEventListener('change', ()=>{
+    const selectedVal = options.value
+    
+    selectedValue.textContent = selectedVal
+    
+})    
