@@ -82,3 +82,54 @@ options.addEventListener('change', ()=>{
     selectedValue.textContent = selectedVal
     
 })    
+///////////////////////////////////
+
+const bt17 = document.querySelector("#btNo-17")
+const dateTime = document.querySelector("#dateTime")
+bt17.addEventListener('click', ()=>{
+    const date = Date();
+    dateTime.innerHTML = date
+    console.log(date);
+    dateTime.style.border = '1px solid black'
+    dateTime.style.padding = '20px'
+    dateTime.style.margin = '10px'
+    dateTime.style.borderRadius = '10px'
+    dateTime.style.color = 'red'
+})
+//////////////////////////////
+
+const bt18 = document.querySelector("#bt18")
+const togglePara = document.querySelector("#togglePara")
+if (bt18) {
+    bt18.addEventListener('click', ()=>{
+        if (togglePara.style.display === 'block') {
+            togglePara.style.display = 'none'           
+        }else{
+            togglePara.style.display = 'block'
+        }
+    })
+}
+////////////////////////////////////
+
+const bt19 = document.querySelector("#bt19")
+const age = document.querySelector('#age')
+const ageResult = document.querySelector("#ageResult")
+bt19.addEventListener("click", ()=>{
+    if (age.value >= 18) {
+        // alert('Eligible')  
+        ageResult.innerHTML = "Eligible"
+        age.value = ''
+    }
+    else{
+        // alert("Not Eligible")
+        ageResult.innerHTML= "Not Eligible"
+        age.value = ''
+    }
+})
+////////////////////////////////////////
+
+const bt20 = document.querySelector("#bt20")
+const searchBox = document.querySelector("#searchBox")
+bt20.addEventListener("click", ()=> {
+    searchBox.value = ''
+})
