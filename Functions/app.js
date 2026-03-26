@@ -12,3 +12,4 @@ getTriangle.addEventListener("click", () => {
     alert("Scalene");
   }
 });
+/////////////////////////////////////////////////////////
